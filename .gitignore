@@ -1,6 +1,7 @@
 # Build and Release Folders
 [Oo]bj/
 [Bb]in/
+doc/
 
 # Executables
 *.swf
