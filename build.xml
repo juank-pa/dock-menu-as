@@ -48,6 +48,7 @@
 			<sp path-element="src"/>
 			<doc-sources path-element="src" />
 			<library-path dir="lib" includes="*" />
+			<examples-path>assets</examples-path>
 		</asdoc>
 	</target>
 </project>
