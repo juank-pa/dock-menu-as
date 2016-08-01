@@ -1,0 +1,114 @@
+<customactions>
+<!--{{{  Actions Panel -->
+
+	<actionspanel>
+		<folder name="com.jk.controls" id="com.jk.controls" index="true" tiptext="Classes for package com.jk.controls">
+			<folder name="DockMenu" id="[com.jk.controls.DockMenu]" index="true" asAncestors="fl.core:UIComponent,flash.display:Sprite,flash.display:DisplayObjectContainer,flash.display:InteractiveObject,flash.display:DisplayObject,flash.events:EventDispatcher,Object" tiptext="Mac OS X like menu bar component" version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenu properties" version="9">
+					<string name="autoHide" tiptext="Enables and disables the auto hide mode" text=".autoHide" object="[com.jk.controls.DockMenu]" version="9" />
+					<string name="autoHideTime" tiptext="Time it takes to show/hide" text=".autoHideTime" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="barAlpha" tiptext="Changes the bar alpha" text=".barAlpha" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="barColor" tiptext="Changes the bar color" text=".barColor" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="barPaddingBottom" tiptext="Sets the padding bottom margin" text=".barPaddingBottom" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="barPaddingSides" tiptext="Sets the padding sides margin" text=".barPaddingSides" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="barPaddingTop" tiptext="Sets the padding top margin" text=".barPaddingTop" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="borderAlpha" tiptext="Changes the bar border alpha" text=".borderAlpha" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="borderColor" tiptext="Changes the bar border color" text=".borderColor" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="cacheIcons" tiptext="Enables icon bitmap caching" text=".cacheIcons" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="captionShadow" tiptext="Enables or disables the caption shadow" text=".captionShadow" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="captionShadowColor" tiptext="Changes the caption shadow color" text=".captionShadowColor" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="clickEffect" tiptext="A value from the DockMenuClickEffect class that specifies the click effect" text=".clickEffect" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="clickEffectAmount" tiptext="Number of times the effect plays" text=".clickEffectAmount" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="clickEffectTime" tiptext="Time it takes for one effect cycle to complete" text=".clickEffectTime" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="dataProvider" tiptext="A DataProvider collection that contains DockMenuIconData elements that describe each icon" text=".dataProvider" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="embedFonts" tiptext="Embeds fonts for the caption" text=".embedFonts" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="magnificationSpan" tiptext="The range of icons affected by magnification" text=".magnificationSpan" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="magnificationTime" tiptext="Time it takes for magnification animation" text=".magnificationTime" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="maxIconSize" tiptext="Maximun icon size" text=".maxIconSize" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="minIconSize" tiptext="Minimun icon size" text=".minIconSize" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="position" tiptext="A value from the DockMenuPosition class that specifies the dock position of the component" text=".position" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="reflectionAlpha" tiptext="Sets the alpha of the icon reflection" text=".reflectionAlpha" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="reflectionSize" tiptext="Sets the size of the reflection" text=".reflectionSize" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="selectedItem" tiptext="Gets a DockMenuIconData object with the the data of the currently seleced icon" text=".selectedItem" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="showReflection" tiptext="Shows or hides the icon reflection" text=".showReflection" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="useSelectedIndicator" tiptext="Determines whether to show a selected icon indicator ot not" text=".useSelectedIndicator" object="[com.jk.controls.DockMenu]" version="9"/>
+				</folder>
+				<folder name="Methods" id="Methods" tiptext="DockMenu methods" version="9">
+               		<string name="DockMenu" object="[com.jk.controls.DockMenu]" text="new DockMenu(%%)" constructor="true" tiptext="Creates a new DockMenu instance." version="9"/>
+					<string name="getCaptionFormat" tiptext="Returns a format object for the caption" text=".getCaptionFormat():flash.text.TextFormat" object="[com.jk.controls.DockMenu]" version="9"/>
+					<string name="setCaptionFormat" tiptext="Sets the format for the caption" text=".setCaptionFormat(%format:flash.text.TextFormat%):void" object="[com.jk.controls.DockMenu]" version="9"/>
+				</folder>
+				<folder name="Events" id="Events" tiptext="DockMenu events" version="9">
+					<string name="iconClick" tiptext="iconClick event" text='.addEventListener(%type:String=DockMenuEvent.ICON_CLICK{DockMenuEvent.ICON_ROLL_OVER,DockMenuEvent.ICON_ROLL_OUT},listener:Function[,useCapture:Boolean=false,priority:int=0,useWeakReference:Boolean=false]%):void;' version="9"/>
+					<string name="iconRollOut" tiptext="iconRollOut event" text='.addEventListener(%type:String=DockMenuEvent.ICON_ROLL_OUT{DockMenuEvent.ICON_CLICK,DockMenuEvent.ICON_ROLL_OUT},listener:Function[,useCapture:Boolean=false,priority:int=0,useWeakReference:Boolean=false]%):void;' version="9"/>
+					<string name="iconRollOver" tiptext="iconRollOver event" text='.addEventListener(%type:String=DockMenuEvent.ICON_ROLL_OVER{DockMenuEvent.ICON_ROLL_OVER,DockMenuEvent.ICON_CLICK},listener:Function[,useCapture:Boolean=false,priority:int=0,useWeakReference:Boolean=false]%):void;' version="9"/>
+				</folder>
+			</folder>
+			<folder name="DockMenuIconData" id="[com.jk.controls.DockMenuIconData]" asAncestors="Object" index="true" tiptext="Represents the data of each icon in the DockMenu bar." version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenuIconData properties" version="9">
+					<string name="icon" tiptext="It is the class used to create the icon." text=".icon" object="[com.jk.controls.DockMenuIconData]" version="9"/>
+					<string name="caption" tiptext="The text used as the icon caption." text=".caption" object="[com.jk.controls.DockMenuIconData]" version="9"/>
+					<string name="link" tiptext="The page, image or MovieClip to link with." text=".link" object="[com.jk.controls.DockMenuIconData]" version="9"/>
+					<string name="target" tiptext="The target frame, MovieClip or frame number to link with." text=".target" object="[com.jk.controls.DockMenuIconData]" version="9"/>
+					<string name="linkType" tiptext="A value from the DockMenuLinkType class that specifies the link type." text=".linkType" object="[com.jk.controls.DockMenuIconData]" version="9"/>
+				</folder>
+				<folder name="Methods" id="Methods" tiptext="DockMenuIconData methods" version="9">
+               		<string name="DockMenuIconData" object="[com.jk.controls.DockMenuIconData]" text="new DockMenuIconData(%%)" constructor="true" tiptext="Creates a new DockMenuIconData instance." version="9"/>
+					<string name="clone" object="[com.jk.controls.DockMenuIconData]" text=".clone(%%):com.jk.conrols:DockMenuIconData" tiptext="Creates a copy of the DockMenuIconData object and sets each property&apos;s value to match that of the original." version="9" />
+					<string name="toString" object="[com.jk.controls.DockMenuIconData]" text=".toString(%%):String" tiptext="Returns a string that contains all the properties of the DockMenuIconData object." version="9" />
+				</folder>
+			</folder>
+			<folder name="DockMenuClickEffect" id="[com.jk.controls.DockMenuClickEffect]" asAncestors="Object" index="true" tiptext="DockMenuClickEffect enumeration for the DockMenu.clickEffect property." version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenuClickEffect properties" version="9">
+					<string name="NONE" tiptext="No click effect applied." constant="true" text="DockMenuClickEffect.NONE" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="GLOW" tiptext="Applies a glow effect on click." constant="true" text="DockMenuClickEffect.GLOW" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="FADE" tiptext="Applies a fade effect on click." constant="true" text="DockMenuClickEffect.FADE" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="JUMP" tiptext="Applies a jump animation on click." constant="true" text="DockMenuClickEffect.JUMP" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="SHINE" tiptext="Applies a shine effect on click." constant="true" text="DockMenuClickEffect.SHINE" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="BLUR" tiptext="Applies a blur effect on click." constant="true" text="DockMenuClickEffect.BLUR" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+					<string name="BEVEL" tiptext="Applies a bevel effect on click." constant="true" text="DockMenuClickEffect.BEVEL" object="[com.jk.events.DockMenuClickEffect]" version="9"/>
+				</folder>
+			</folder>
+			<folder name="DockMenuLinkType" id="[com.jk.controls.DockMenuLinkType]" asAncestors="Object" index="true" tiptext="DockMenuLinkType enumeration for the DockMenuIconData.linkType property." version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenuLinkType properties" version="9">
+					<string name="AUTO" tiptext="Determines the link behavior based on the link format." constant="true" text="DockMenuLinkType.AUTO" object="[com.jk.events.DockMenuLinkType]" version="9"/>
+					<string name="SWF" tiptext="Forces the link to act as an SWF, JPG, PNG, GIF loader." constant="true" text="DockMenuLinkType.SWF" object="[com.jk.events.DockMenuLinkType]" version="9"/>
+					<string name="WEB_PAGE" tiptext="Force the link to act as a Web Page navigator." constant="true" text="DockMenuLinkType.WEB_PAGE" object="[com.jk.events.DockMenuLinkType]" version="9"/>
+					<string name="MOVIE_CLIP" tiptext="Forces the link to act as a MovieClip playback navigator." constant="true" text="DockMenuLinkType.MOVIE_CLIP" object="[com.jk.events.DockMenuLinkType]" version="9"/>
+				</folder>
+			</folder>
+			<folder name="DockMenuPosition" id="[com.jk.controls.DockMenuPosition]" asAncestors="Object" index="true" tiptext="DockMenuPosition enumeration for the DockMenu.position property." version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenuPosition properties" version="9">
+					<string name="TOP" tiptext="Docks the DockMenu to the top of the Stage or MovieClip." constant="true" text="DockMenuPosition.TOP" object="[com.jk.events.DockMenuPosition]" version="9"/>
+					<string name="BOTTOM" tiptext="Docks the DockMenu to the bottom of the Stage or MovieClip." constant="true" text="DockMenuPosition.BOTTOM" object="[com.jk.events.DockMenuPosition]" version="9"/>
+					<string name="LEFT" tiptext="Docks the DockMenu to the left of the Stage or MovieClip." constant="true" text="DockMenuPosition.LEFT" object="[com.jk.events.DockMenuPosition]" version="9"/>
+					<string name="RIGHT" tiptext="Docks the DockMenu to the right of the Stage or MovieClip." constant="true" text="DockMenuPosition.RIGHT" object="[com.jk.events.DockMenuPosition]" version="9"/>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="com.jk.events" id="com.jk.events" index="true" tiptext="Classes for package com.jk.events">
+			<folder name="DockMenuEvent" id="[com.jk.events.DockMenuEvent]" asAncestors="flash.events:Event,Object" index="true" tiptext="DockMenu event" version="9">
+				<folder name="Properties" id="Properties" tiptext="DockMenuEvent properties" version="9">
+					<string name="data" tiptext="An instance of a DockMenuIconData object with the icon information" text=".data" object="[com.jk.events.DockMenuEvent]" version="9"/>
+					<string name="id" tiptext="Position id of the icon under the cursor" text=".id" object="[com.jk.events.DockMenuEvent]" version="9"/>
+					<string name="ICON_CLICK" tiptext="Defines the value of the type property of an iconClick event object." constant="true" text="DockMenuEvent.ICON_CLICK" object="[com.jk.events.DockMenuEvent]" version="9"/>
+					<string name="ICON_ROLL_OUT" tiptext="Defines the value of the type property of an iconRollOut event object." constant="true" text="DockMenuEvent.ICON_ROLL_OUT" object="[com.jk.events.DockMenuEvent]" version="9"/>
+					<string name="ICON_ROLL_OVER" tiptext="Defines the value of the type property of an iconRollOver event object." constant="true" text="DockMenuEvent.ICON_ROLL_OVER" object="[com.jk.events.DockMenuEvent]" version="9"/>
+				</folder>
+				<folder name="Methods" id="Methods" tiptext="DockMenuEvent methods" version="9">
+					<string name="DockMenuEvent" object="[com.jk.events.DockMenuEvent]" text="new DockMenuEvent(%type:String[,id:int=-1,data:DockMenuIconData=null,cancelable:Boolean=false]%)" constructor="true" tiptext="Constructor for DockMenuEvent objects." version="9" />
+					<string name="clone" object="[com.jk.events.DockMenuEvent]" text=".clone(%%):flash.events:Event" tiptext="Creates a copy of the DockMenuEvent object and sets each property&apos;s value to match that of the original." version="9" />
+					<string name="toString" object="[com.jk.events.DockMenuEvent]" text=".toString(%%):String" tiptext="Returns a string that contains all the properties of the DockMenuEvent object." version="9" />
+				</folder>
+			</folder>
+		</folder>
+	</actionspanel>
+
+
+	<!--{{{  Color Syntax -->
+	<codehints>
+        <package name="com.jk.controls" children="DockMenu,DockMenuPosition,DockMenuIconData,DockMenuLinkType,DockMenuPosition,DockMenuClickEffect"/>
+        <package name="com.jk.events" children="DockMenuEvent"/>
+	</codehints>
+</customactions>
+

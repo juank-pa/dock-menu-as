@@ -1,0 +1,28 @@
+<macromedia-extension
+	 name="DockMenu Component"
+	 version="3.0.1"
+	 type="flashcomponentswc"
+	 requires-restart="true"
+	 ismultilingual="true" >
+	<author name="Juan Carlos Pazmiño" />
+	<products>
+		<product name="Flash" version="9" required="true" />
+	</products>
+	<description>
+		<![CDATA[
+			DockMenu Component:<br>
+			It adds a Mac OS X like menu bar to your projects, games or RIAs.<br>	
+		]]>
+	</description>
+	<ui-access>
+		<![CDATA[
+			You can find the DockMenu Component on the Components Panel inside the JK Components category.<br>
+			For information about properties, methods and events see the Help files included with the component.<br><br>
+        ]]>
+	</ui-access>
+	<files>
+		<file source="ActionsPanel\ActionScript_3\CustomActions\JKDockMenuComponent.xml" destination="$flash/ActionsPanel/ActionScript_3/CustomActions" />		
+		<file source="bin\DockMenu.swc" destination="$flash/Components/JK Components" />
+	</files>
+
+</macromedia-extension>
