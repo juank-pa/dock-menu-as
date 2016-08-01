@@ -1,0 +1,42 @@
+<project name="DockMenu2" default="build">
+
+	<property environment="env" />
+	<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
+	<property name="FLEX_HOME" location="${env.FLEX_HOME}" />
+	
+	<property name="OUTPUT" location="bin/DockMenu.swc"/>
+
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/>
+
+	<target name="build">
+
+		<mkdir dir="bin" />
+
+		<!-- compile SWC -->
+		<compc output="${OUTPUT}">
+			<!-- <load-config filename="${FLEX_HOME}/frameworks/air-config.xml" /> --> <!-- uncomment for AIR -->
+			<sp path-element="src" />
+			<include-sources dir="src" includes="*"  />
+			<library-path dir="lib" includes="*" />
+		</compc>
+
+		<!-- generate documentation -->
+		<asdoc output="bin/tempDoc" lenient="true" failonerror="true" keep-xml="true" skip-xsl="true" fork="true">
+			<sp path-element="src"/>
+			<doc-sources path-element="src" />
+			<library-path dir="lib" includes="*" />
+		</asdoc>
+
+		<!-- inject documentation inside SWC -->
+		<zip destfile="${OUTPUT}" update="true">
+			<zipfileset dir="bin/tempDoc/tempdita" prefix="docs">
+				<include name="*.*"/>
+				<exclude name="ASDoc_Config.xml"/>
+				<exclude name="overviews.xml"/>
+			</zipfileset>
+		</zip>
+
+		<!-- cleanup -->
+		<delete dir="bin/tempDoc" />
+	</target>
+</project>

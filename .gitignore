@@ -1,6 +1,6 @@
 # Build and Release Folders
-obj/ # FlashDevelop obj
-bin/ # FlashDevelop bin
+[Oo]bj/
+[Bb]in/
 
 # Executables
 *.swf
