@@ -86,7 +86,7 @@ Once you dragged the component to the Stage:
 1. Enter the following data for each bar item:
   1. **caption:** (optional) is the label that will appear near the icon. You can omit this value if you don't want any label.
   1. **icon:** (mandatory) is the Class name of a movie clip (DisplayObject) in the library that will be used
-     as the icon image (for information on creating you icons see [Creating icons](#Creating icons)). 
+     as the icon image (for information on creating you icons see [Creating icons](#creating-icons)). 
      The icon can be also set to a `DisplayObject` instance using ActionScript code.
   1. **link:** (optional) specifies the action to be performed when a button is clicked. 
      What the menu will do depends on this value and the target property also. If no link is specified no 
