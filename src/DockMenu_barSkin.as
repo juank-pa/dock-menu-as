@@ -8,7 +8,10 @@
 	import flash.display.GradientType;
 	import flash.geom.Rectangle;
 	
-	
+	/**
+	 * @author Juan Carlos Pazmiño
+	 * @private
+	 */
 	public class DockMenu_barSkin extends Sprite {
 		
 		private var shape:Shape;

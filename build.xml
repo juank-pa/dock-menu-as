@@ -20,7 +20,7 @@
 			<library-path dir="lib" includes="*" />
 		</compc>
 
-		<!-- generate documentation -->
+		<!-- generate SWC documentation -->
 		<asdoc output="bin/tempDoc" lenient="true" failonerror="true" keep-xml="true" skip-xsl="true" fork="true">
 			<sp path-element="src"/>
 			<doc-sources path-element="src" />
@@ -38,5 +38,16 @@
 
 		<!-- cleanup -->
 		<delete dir="bin/tempDoc" />
+		
+		<!-- remove previous documentation -->
+		<delete dir="doc" />
+		<mkdir dir="doc" />
+		
+		<!-- generate documentation -->
+		<asdoc output="doc" lenient="true" failonerror="true" fork="true">
+			<sp path-element="src"/>
+			<doc-sources path-element="src" />
+			<library-path dir="lib" includes="*" />
+		</asdoc>
 	</target>
 </project>
